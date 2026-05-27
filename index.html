@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Voxion.ai - Voice App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Voxion.ai</h1>
+      <p id="status">Not connected</p>
+      <div class="controls">
+        <button id="joinBtn" onclick="joinChannel()">Join Voice Channel</button>
+      <button id="leaveBtn" onclick="leaveChannel()" disabled>Leave Channel</button>
+        <button id="muteBtn" onclick="toggleMute()" disabled>Mute</button>
+      </div>
+      <div id="users">
+        <h3>Users in channel:</h3>
+        <ul id="userList"></ul>
+      </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+  </html>
